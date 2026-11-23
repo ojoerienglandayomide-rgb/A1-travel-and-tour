@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Travel and Tour | Destinations</title>
+
+    <link rel="stylesheet" href="destination.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <h2>A1 <span>Travel & Tour</span></h2>
+        </div>
+
+        <nav class="navbar">
+            <a href="A1.html">Home</a>
+            <a href="destination.html" class="active">Destination</a>
+            <a href="package.html">Package</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="book-btn">Book A Trip</a>
+    </header>
+
+
+    <!-- DESTINATION HERO -->
+    <section class="destination-hero">
+        <div class="hero-content">
+            <h1>Discover Beautiful Places</h1>
+            <p>Explore the world and create unforgettable memories with A1 Travel and Tour.</p>
+            <a href="#destinations" class="hero-btn">Explore Destinations</a>
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro">
+        <h2>Where Would You Love To Go?</h2>
+        <p>
+            From beautiful beaches to exciting cities, discover amazing
+            destinations around the world. Your next adventure starts here!
+        </p>
+    </section>
+
+
+    <!-- SEARCH AND FILTER -->
+    <section class="search-section">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a destination..."
+        >
+
+        <select id="categoryFilter">
+            <option value="all">All Destinations</option>
+            <option value="city">Cities</option>
+            <option value="beach">Beaches</option>
+            <option value="nature">Nature</option>
+            <option value="adventure">Adventure</option>
+        </select>
+
+        <button id="searchButton">Search</button>
+    </section>
+
+
+    <!-- DESTINATION CARDS -->
+    <section class="destinations" id="destinations">
+
+        <div class="section-heading">
+            <h2>Popular Destinations</h2>
+            <p>Explore some of the world's most beautiful places.</p>
+        </div>
+
+        <div class="destination-container">
+
+            <!-- PARIS -->
+            <div class="destination-card" data-category="city">
+                <img src="image/France.jpg" alt="Paris">
+                <div class="card-content">
+                    <span>France</span>
+                    <h3>Paris</h3>
+                    <p>Experience the Eiffel Tower, beautiful streets and romantic atmosphere.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- DUBAI -->
+            <div class="destination-card" data-category="city">
+                <img src="image/Dubai.jpg" alt="Dubai">
+                <div class="card-content">
+                    <span>United Arab Emirates</span>
+                    <h3>Dubai</h3>
+                    <p>Enjoy luxury shopping, exciting desert adventures and amazing architecture.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- MALDIVES -->
+            <div class="destination-card" data-category="beach">
+                <img src="image/Indian Ocean.jpg" alt="Maldives">
+                <div class="card-content">
+                    <span>Indian Ocean</span>
+                    <h3>Maldives</h3>
+                    <p>Relax on beautiful beaches and enjoy crystal-clear blue waters.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- LONDON -->
+            <div class="destination-card" data-category="city">
+                <img src="image/Uk.jpg" alt="London">
+                <div class="card-content">
+                    <span>England</span>
+                    <h3>London</h3>
+                    <p>Discover famous landmarks, museums and exciting city life.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- NEW YORK -->
+            <div class="destination-card" data-category="city">
+                <img src="image/New york.jpg" alt="New York">
+                <div class="card-content">
+                    <span>United States</span>
+                    <h3>New York</h3>
+                    <p>Explore Times Square, Central Park and the city that never sleeps.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- SWITZERLAND -->
+            <div class="destination-card" data-category="nature">
+                <img src="image/Switzerland (2).jpg" alt="Switzerland">
+                <div class="card-content">
+                    <span>Europe</span>
+                    <h3>Switzerland</h3>
+                    <p>Enjoy beautiful mountains, peaceful lakes and amazing scenery.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- BALI -->
+            <div class="destination-card" data-category="beach">
+                <img src="image/Indonesia’s.jpg" alt="Bali">
+                <div class="card-content">
+                    <span>Indonesia</span>
+                    <h3>Bali</h3>
+                    <p>Experience tropical beaches, temples and relaxing island life.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- CAPE TOWN -->
+            <div class="destination-card" data-category="adventure">
+                <img src="image/Cape Town, South Africa.jpg" alt="Cape Town">
+                <div class="card-content">
+                    <span>South Africa</span>
+                    <h3>Cape Town</h3>
+                    <p>Discover Table Mountain, beautiful coastlines and exciting adventures.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+            <!-- TOKYO -->
+            <div class="destination-card" data-category="adventure">
+                <img src="image/tokyo.jpg" alt="Tokyo">
+                <div class="card-content">
+                    <span>Japan</span>
+                    <h3>Tokyo</h3>
+                    <p>Explore modern technology, Japanese culture and delicious food.</p>
+                    <a href="package.html">Explore More</a>
+                </div>
+            </div>
+
+        </div>
+
+        <p id="noResults">No destinations found. Try another search.</p>
+
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="benefits">
+        <h2>Why Travel With A1?</h2>
+
+        <div class="benefit-container">
+            <div class="benefit-box">
+                <h3>Best Destinations</h3>
+                <p>We help you discover amazing places around the world.</p>
+            </div>
+
+            <div class="benefit-box">
+                <h3>Affordable Trips</h3>
+                <p>Enjoy memorable travel experiences at competitive prices.</p>
+            </div>
+
+            <div class="benefit-box">
+                <h3>24/7 Support</h3>
+                <p>Our team is ready to assist you throughout your journey.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+    <section class="destination-cta">
+        <h2>Your Next Adventure Starts Here!</h2>
+        <p>Let us help you plan your next unforgettable journey.</p>
+        <a href="contact.html">Contact Us Today</a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2>A1 Travel & Tour</h2>
+        <p>Making your travel dreams come true.</p>
+
+        <div class="footer-links">
+            <a href="A1.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="package.html">Package</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 A1 Travel and Tour. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script src="destination.js"></script>
+</body>
+</html>

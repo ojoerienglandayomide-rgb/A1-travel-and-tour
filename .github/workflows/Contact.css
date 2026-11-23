@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f9fc;
+    color: #222;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #073b64;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 25px;
+}
+
+.logo span {
+    color: #e9a323;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #e9a323;
+}
+
+.book-btn {
+    background: #e9a323;
+    color: #073b64;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* HERO SECTION */
+.contact-hero {
+    height: 330px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("image/destination-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 17px;
+}
+
+
+/* INTRODUCTION */
+.contact-intro {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.contact-intro h2 {
+    color: #073b64;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-intro p {
+    max-width: 650px;
+    margin: auto;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* CONTACT SECTION */
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 35px;
+    padding: 30px 7% 70px;
+}
+
+
+/* CONTACT INFORMATION */
+.contact-info {
+    background: #073b64;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-icon {
+    background: #e9a323;
+    color: #073b64;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.info-box h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.info-box p {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #e9a323;
+    color: #073b64;
+    padding: 13px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* CONTACT FORM */
+.contact-form {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.contact-form h2 {
+    color: #073b64;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #073b64;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #073b64;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e9a323;
+    color: #073b64;
+}
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* CALL TO ACTION */
+.contact-cta {
+    background: #eef3f8;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-cta h2 {
+    color: #073b64;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.contact-cta a {
+    display: inline-block;
+    background: #e9a323;
+    color: #073b64;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #052b49;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+.footer-links a:hover {
+    color: #e9a323;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .footer-links a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
